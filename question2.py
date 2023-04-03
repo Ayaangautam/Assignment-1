@@ -10,6 +10,9 @@ Total_income=a-stand_ded-(depend_ded*b)
 
 #Tax =Taxable  income * Tax rate
 Tax=(Total_income*20)/100
+if (Tax<0): 
+    print("0")
 
-print("taxable_income",Total_income)
+else:
+    print("taxable_income",Total_income)
 print("tax",Tax)
